@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Airbnb Property Listing Clone</title>
+</head>
+<body>
+    <header>
+        <h1>Airbnb Property Listing</h1>
+    </header>
+    
+    <main>
+        <section id="filters">
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Enter location">
+
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+
+            <label for="price-range">Price Range:</label>
+            <input type="range" id="price-range" min="0" max="1000" step="10" value="500">
+            <span id="price-value">$500</span>
+
+            <button id="search-btn">Search</button>
+        </section>
+        
+        <section id="property-listings">
+            
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-price"></p>
+            <p id="modal-amenities"></p>
+            <button id="book-btn">Book Now</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
